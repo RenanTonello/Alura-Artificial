@@ -1,0 +1,57 @@
+:root {
+    --cor-fundo: #F4F7F6;
+    --cor-principal: #94979b;
+    --cor-secundaria: #4CAF50;
+    --cor-destaque: #FF9800;
+    --cor-texto: #ffffff;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif; /* Garantir fonte limpa e legível */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas de texto */
+    padding: 20px; /* Adiciona espaçamento nas bordas */
+    
+    /* Adicionando a imagem de fundo */
+    background-image: url('fundo-hexagonal-escuro-com-cor-de-gradiente_79603-1409.avif'); /* Coloque o caminho da sua imagem aqui */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 100%; /* Ajusta a largura para 100% */
+    max-width: 1000px;
+    text-align: center;
+    padding: 80px; /* Aumenta o padding para mais espaço dentro da caixa */
+    border-radius: 20px; /* Deixa as bordas mais suaves */
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    margin-bottom: 30px; /* Adiciona mais espaço abaixo do título */
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 18px 30px; /* Aumenta o padding do botão */
+    font-size: 1rem; /* Aumenta o tamanho da fonte do botão */
+    transition: background-color 0.3s;
+    margin: 10px 0; /* Dá espaçamento superior e inferior aos botões */
+    width: auto; /* Garante que o botão não estique além do necessário */
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
